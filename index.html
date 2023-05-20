@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>  
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-left"><a href="index.html">Uros Glogovac</a></li>
+          <li><a class="nav-underline" href="index.html">Home</a></li>
+          <li><a class="nav-underline" href="projects.html">Projects</a></li>
+          <li><a class="nav-underline" href="work.html">Work</a></li>
+          <li class="nav-right"><a href="https://twitter.com/glogovacu" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+          <li class="nav-right"><a href="https://www.linkedin.com/in/uros-glogovac-025b7b266/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li class="nav-right"><a href="https://github.com/glogovacu" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <p>Hello, I'm Uros, </p>
+              <h1>Software Developer</h1>
+              <p>based in Serbia.</p>
+              <button href="Resume.pdf" onclick="window.open('Resume.pdf', '_blank'); return false;" class="resume-link">Resume</button>
+            </div>
+            <div class="column">
+              <figure class="intro-image">
+                <img src="images/Ja.png" alt="Image Description">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="row">
+            <div class="column-2">
+              <h2>about.</h2>
+              <p class="content"> Hello, my name is Uroš Glogovac. I am a final
+                year student at The School of Electrical and Computing Engineer of
+                  Applied Studies. This is my education background.</p>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+            </div>
+            <div class="column-2">
+              <ul class="bullet-list">
+                <li>
+                  <h3>2016-2020</h3>
+                  <p><strong>Technical School Smederevo</strong>  was where i went to high school. The course i was on was called <u>Computer Network Administrator</u> .
+                  I learned some basics in C and C#, network administration, linux terminal, video editing, SQL...
+                  </p>
+                </li>
+                <li>
+                  <h3>2020-Present</h3>
+                  <p><strong>The School of Electrical and Computing Engineer of
+                    Applied Studies</strong> is where i am right now. The course i am on is called <u>New Computer
+                    Technologies</u>. I learned intermediate knowledge about C, C++, <strong>C#</strong>, <strong>OOP</strong>,
+                    Java, linux terminal, <strong>Unity</strong>, Microsoft Office, SQL, HTML... Also some basics in JavaScript,
+                    PHP, Wordpress, Information Systems Modeling...</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="container">
+          <div class="row">
+            <div class="column-2">
+              <h2>projects.</h2>
+              <p class="content">Throughout my experience in the field
+                 thus far, I have been presented with numerous exciting
+                  projects that exhibit variations with respect to programming languages utilized, frameworks, complexity and project sizes.</p>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/Unity.jpg" alt="Unity">
+                <p class="card-date">December 24, 2022.</p>
+                <div class="card-content">
+                  <h3>Unity</h3>
+                  <p>For a school project, my brother and I collaborated on developing a First Person Shooter game. As we were both enrolled in the same class, it provided an opportunity to work together on this exciting project. Later on, I took the initiative to refactor the code, focusing on improving readability and extensibility by incorporating SOLID principles. Additionally, I implemented various design patterns such as Singleton and Command pattern to enhance the overall architecture of the game.</p>
+                  <button class="card-button">
+                    <span>Read More</span>
+                    <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                        <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                    </svg>
+                </button>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="images/NetFramework.png" alt="Image">
+                <p class="card-date">April 12, 2022.</p>
+                <div class="card-content">
+                  <h3>.Net Framework</h3>
+                  <p>Also as a part of a school project, I developed a Windows Forms Application designed for hotel management using .txt files as data storage. As a means of honing my skills, I revisited the project and utilized my previous code as a foundation for refactoring and improvement. The revisions I made can be observed on my GitHub repository, showcasing my dedication to enhancing the application's functionality and code quality.</p>
+                  <button class="card-button">
+                    <span>Read More</span>
+                    <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                        <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                    </svg>
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <div class="row">
+            <div class="column-2">
+              <h2>contact.</h2>
+              <p>For any question or potential collaboration opportunity feel free to get in touch with me. At present I am open to accepting freelance work and exploring fresh projects.</p>
+              <p><i class="fa-solid fa-phone"></i> +381 621 620 999</p>
+              <p><i class="fa-solid fa-envelope"></i> glogovacu@gmail.com</p>
+              <p><i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/glogovacu" target="_blank">@glogovacu</a></p>  
+              <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/uros-glogovac-025b7b266/" target="_blank">linkedin.com/in/uros-glogovac</a> </p>
+              <p><i class="fa-brands fa-github"></i> <a href="https://github.com/glogovacu" target="_blank">github.com/glogovacu</a></p>
+              
+            </div>
+            <div class="column">
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      
+    </main>
+    <footer class="footer">
+        <div class="row">
+          <div class="column">
+            <ul class="social-links">
+              <li><a href="https://twitter.com/glogovacu" target="_blank"><i class="fa-brands fa-2x fa-twitter"></i></i></a></li>
+              <li><a href="https://www.linkedin.com/in/uros-glogovac-025b7b266/" target="_blank"><i class="fa-brands fa-2x fa-linkedin"></i></i></a></li>
+              <li><a href="https://github.com/glogovacu" target="_blank"><i class="fa-brands fa-2x fa-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            &copy; Uros Glogovac - Made By Glogovacu
+          </div>
+          
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/6296fa48ee.js" crossorigin="anonymous"></script>
+  </body>
+</html>

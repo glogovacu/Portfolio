@@ -1,0 +1,286 @@
+/* { border: 1px solid black; } */
+body {
+  font-family: 'Poppins';font-size: 22px;
+  background: #FBF8CC;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1 {
+  font-size: 100px; /* or the default font size you want to use */
+  font-weight: bold;
+  margin: 0;
+  color: #03045E;
+  padding: 0;
+}
+p{
+  margin: 0;
+  color: #03045E;
+}
+h2{
+  font-size: 100px;
+  font-weight: bold;
+  margin: 0 0 32px 0;
+  color: #474306;
+}
+h3{
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 0 32px 0;
+}
+section{
+  padding: 7% 13% 0 13%;
+}
+
+/*Style the navigation menu*/
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;    
+  padding: 30px 20px;
+  text-decoration: none;
+  color: #03045E;
+  position: relative;
+  }
+  nav a.nav-underline:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #03045E;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  nav a.nav-underline:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+nav li.nav-right{
+    float:right;
+}
+nav li.nav-left{
+    float:left;
+    font-style: normal;
+    font-weight: 600;
+}
+/* Style main */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.column {
+  flex: 1;
+  padding: 60px;
+  text-align: left;
+  }
+  .column-2{
+    flex:2;
+    padding: 10px;
+  }
+.content{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+}
+.card {
+  margin-top:  50px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-content {
+  padding: 10px;
+}
+.card-date{
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #03045E;
+}
+
+.card-content p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.card-button {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica,"sans-serif";
+  transition: all .2s;
+  padding: 10px 20px;
+  background: #ffe54c;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.card-button:hover {
+  background: #c4e201;
+}
+
+.card-button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+.card-button:hover svg {
+  transform: translateX(5px);
+}
+
+.card-button:active {
+  transform: scale(0.95);
+}
+/* Style the intro content */
+  .intro-content {
+    flex: 1;
+    color: #03045E;
+  }
+  .intro-content p{
+    font-size: 28px;
+    font-weight: 500;
+  }
+  
+  .intro-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .intro-image img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+.resume-link {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Poppins';
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #474306;
+  margin-top: 5%;
+  margin-right: 20px;
+  
+}
+
+.resume-link:after {
+  content: "";
+  background-color: #ffe54c;
+  border-radius: 8px;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.resume-link.unity:after{
+  background: #1f1f1f;
+}
+.resume-link.net:after{
+  background: #6c429c;
+}
+.resume-link.android:after{
+  background: #3dda84;
+}
+.resume-link:hover:after {
+  top: 0px;
+  left: 0px;
+}
+.resume-link.clicked:after {
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .resume-link {
+    padding: 13px 50px 13px;
+  }
+}
+/* Style the about menu */
+.bullet-list {
+  list-style-type: disc;
+  padding-left: 0;
+  color: #03045E;
+}
+/* Style the projects menu and page */
+.unity-projects p,h3{
+  color: white;
+}
+/* Style the contact menu */
+.contact p{
+  margin-top: 10px;
+}
+.contact a{
+  text-decoration: none;
+  color: #03045E;
+}
+/* Style the footer menu */
+footer {
+  margin-top: 15%;
+  padding: 0% 13% 1% 13%;
+  background: #ffe54c;
+  justify-content: center;
+  align-items: center;
+  
+}
+footer li{
+  display: inline-block;
+  margin-right: 20px;
+}
+footer .column{
+  text-align: center;
+  padding: 0;
+  margin: 20px 0 2px 0 ;
+}
+footer a{
+  color: #03045E;
+}
