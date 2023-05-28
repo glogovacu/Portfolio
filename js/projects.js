@@ -1,7 +1,14 @@
 var activeButton = null;
 
 window.onload = function(){
-    changeStuffUnity(document.getElementById("button1"));
+    var projekti = new URLSearchParams(window.location.search);
+    var projekat = projekti.get("projekat");
+    if(projekat === "net"){
+        changeStuffNET(document.getElementById("button2"));
+    }
+    else{
+        changeStuffUnity(document.getElementById("button1"));
+    }
 }
 
 function loadContent(url) {
@@ -64,8 +71,8 @@ function changeStuffNET(button){
     buttonLogic('netProjects.html', button);
     var footer = document.querySelector("footer");
     var myImage = document.getElementById("project-image");
-    var elements = document.querySelectorAll("li, a");
-    var elements2 = document.querySelectorAll("p, h2");
+    var elements = document.querySelectorAll("li, a,  h2");
+    var elements2 = document.querySelectorAll("p");
     var buttons = document.querySelectorAll("button");
     
     footer.style.borderTop = "";

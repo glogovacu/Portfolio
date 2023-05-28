@@ -10,6 +10,9 @@ ul {
   padding: 0;
   list-style: none;
 }
+a{
+  text-decoration: none;
+}
 h1 {
   font-size: 100px; /* or the default font size you want to use */
   font-weight: bold;
@@ -31,6 +34,14 @@ h3{
   font-size: 60px;
   font-weight: bold;
   margin: 0 0 32px 0;
+  
+}
+h4{
+  font-size:20px;
+  font-weight: bold;
+  color: #474306;
+  margin: 0 0 10px 0;
+  padding: 0;
 }
 section{
   padding: 7% 13% 0 13%;
@@ -83,7 +94,7 @@ nav li.nav-left{
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 10px 0;
 }
 .column {
@@ -252,9 +263,74 @@ nav li.nav-left{
   color: #03045E;
 }
 /* Style the projects menu and page */
-.unity-projects p,h3{
+.unity-projects p{
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.unity-projects .row{
+  padding: 0% 15% 0% 15%;
+}
+.unity-projects .column{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.unity-projects h4{
   color: white;
 }
+.unity-projects .row{
+  justify-content: center;
+}
+.net-projects .column{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.net-projects p{
+  color: #6c429c;
+  font-size: 14px;
+  text-align: center;
+}
+.net-projects .row{
+  padding: 0% 15% 0% 15%;
+}
+.net-projects .column{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.net-projects h4{
+  color: white;
+}
+.net-projects .row{
+  justify-content: center;
+}
+.android-projects .column{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.android-projects p{
+  color: black;
+  font-size: 14px;
+  text-align: center;
+}
+.android-projects .row{
+  padding: 0% 15% 0% 15%;
+}
+.android-projects .column{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.android-projects h4{
+  color: #073042;
+}
+.android-projects .row{
+  justify-content: center;
+}
+
 /* Style the contact menu */
 .contact p{
   margin-top: 10px;
@@ -262,6 +338,13 @@ nav li.nav-left{
 .contact a{
   text-decoration: none;
   color: #03045E;
+}
+/* Style the work */
+.work .column{
+  text-align: center;
+}
+.work .container{
+  justify-content: center;
 }
 /* Style the footer menu */
 footer {
